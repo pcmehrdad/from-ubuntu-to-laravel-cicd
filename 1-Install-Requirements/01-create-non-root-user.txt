@@ -1,0 +1,2 @@
+adduser mehrdad
+usermod -aG sudo mehrdad
