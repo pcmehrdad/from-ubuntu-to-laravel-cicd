@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
+export DEBIAN_FRONTEND=noninteractive
 function get_latest_github_release_number() {
 	curl --silent "https://api.github.com/repos/$1/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
 }
@@ -17,4 +18,4 @@ sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
 sudo systemctl enable --now docker
 
-sudo apt --yes update && sudo apt --yes upgrade
+sudo apt --yes update && sudo -E apt --yes upgrade
