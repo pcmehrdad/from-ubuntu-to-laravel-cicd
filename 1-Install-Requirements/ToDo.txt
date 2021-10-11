@@ -1,6 +1,0 @@
-aliases
-portainer
-pma
-nginx-reverse-proxy
-other
-
