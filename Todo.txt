@@ -2,3 +2,4 @@ aliases
 xdebug
 nginx-reverse-proxy
 php multi version
+other
