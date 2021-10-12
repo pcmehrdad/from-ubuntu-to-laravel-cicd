@@ -1,3 +1,5 @@
+sudo passwd root
+
 sudo -i
 passwd
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
