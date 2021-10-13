@@ -39,5 +39,5 @@ cd ~ && curl -o 06-install-phpmyadmin-docker.sh -L https://github.com/pcmehrdad/
 ```
 #### Laravel Global Installer :
 ```sh
-cd ~ && curl -o 07-laravel-global-installer.sh -L https://github.com/pcmehrdad/from-ubuntu-to-laravel-cicd/raw/main/07-laravel-global-installer.sh && sudo bash 07-laravel-global-installer.sh
+cd ~ && curl -o 07-laravel-global-installer.sh -L https://github.com/pcmehrdad/from-ubuntu-to-laravel-cicd/raw/main/07-laravel-global-installer.sh && bash 07-laravel-global-installer.sh
 ```
