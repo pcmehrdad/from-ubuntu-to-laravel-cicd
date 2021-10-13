@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-
+ENV DEBIAN_FRONTEND noninteractive
 sudo apt --yes install software-properties-common gnupg gosu curl ca-certificates zip unzip git supervisor sqlite3 libcap2-bin libpng-dev python2
 sudo add-apt-repository --yes ppa:ondrej/php
 
