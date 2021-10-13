@@ -29,11 +29,11 @@ cd ~ && curl -o 03-php8-with-composer.sh -L https://github.com/pcmehrdad/from-ub
 ```sh
 cd ~ && curl -o 04-docker-with-compose.sh -L https://github.com/pcmehrdad/from-ubuntu-to-laravel-cicd/raw/main/04-docker-with-compose.sh && sudo bash 04-docker-with-compose.sh
 ```
-#### Install Portainer with docker :
+#### Install Portainer with docker (port:9999):
 ```sh
 cd ~ && curl -o 05-install-portainer-docker.sh -L https://github.com/pcmehrdad/from-ubuntu-to-laravel-cicd/raw/main/05-install-portainer-docker.sh && sudo bash 05-install-portainer-docker.sh
 ```
-#### Install PHPMyAdmin with docker :
+#### Install PHPMyAdmin with docker (port:9998):
 ```sh
 cd ~ && curl -o 06-install-phpmyadmin-docker.sh -L https://github.com/pcmehrdad/from-ubuntu-to-laravel-cicd/raw/main/06-install-phpmyadmin-docker.sh && sudo bash 06-install-phpmyadmin-docker.sh
 ```
