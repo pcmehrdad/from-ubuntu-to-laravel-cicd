@@ -37,7 +37,7 @@ cd ~ && curl -o 05-install-portainer-docker.sh -L https://github.com/pcmehrdad/f
 ```sh
 cd ~ && curl -o 06-install-phpmyadmin-docker.sh -L https://github.com/pcmehrdad/from-ubuntu-to-laravel-cicd/raw/main/06-install-phpmyadmin-docker.sh && sudo bash 06-install-phpmyadmin-docker.sh
 ```
-#### Laravel Global Installer :
+#### Laravel Global Installer (+sail +laravel-new):
 ```sh
 cd ~ && curl -o 07-laravel-global-installer.sh -L https://github.com/pcmehrdad/from-ubuntu-to-laravel-cicd/raw/main/07-laravel-global-installer.sh && bash 07-laravel-global-installer.sh
 ```
