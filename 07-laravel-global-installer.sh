@@ -8,5 +8,6 @@ echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.bashrc
 echo "alias sail='./vendor/bin/sail'" >> ~/.bash_aliases
 echo 'laravel-new(){
 	curl -s "https://laravel.build/$1" | bash
+	sudo sed -i 's/laravel.test/'"$1"'.test/g' $1/docker-compose.yml
 }' >> ~/.bash_aliases
 source ~/.bash_aliases
