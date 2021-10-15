@@ -10,4 +10,5 @@ echo 'laravel-new(){
 	curl -s "https://laravel.build/$1" | bash
 	sudo sed -i 's/laravel.test/'"$1"'.test/g' $1/docker-compose.yml
 }' >> ~/.bash_aliases
+# updated
 source ~/.bash_aliases
