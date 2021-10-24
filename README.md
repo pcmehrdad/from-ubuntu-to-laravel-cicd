@@ -10,7 +10,7 @@ echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 sed -i 's/#Port 22/Port 6070/g' /etc/ssh/sshd_config
 sudo service ssh restart
 echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
-sudo apt --yes dist-upgrade && sudo apt --yes update && sudo apt -q --yes upgrade
+sudo apt --yes update && sudo apt -q --yes upgrade
 ```
 #### If you Want to Create non-root User :
 ```sh
