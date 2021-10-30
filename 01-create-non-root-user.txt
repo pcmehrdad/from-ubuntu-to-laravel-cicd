@@ -1,2 +1,3 @@
-adduser mehrdad
-usermod -aG sudo mehrdad
+adduser ubuntu
+usermod -aG sudo ubuntu
+passwd ubuntu
