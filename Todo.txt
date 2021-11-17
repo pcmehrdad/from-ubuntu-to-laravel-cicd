@@ -2,7 +2,6 @@ aliases
 xdebug like lemp
 nginx-reverse-proxy
 php multi version
-
 updates scripts
 other
 ssl
