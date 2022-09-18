@@ -7,10 +7,21 @@
 sudo -i
 passwd
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 sed -i 's/#Port 22/Port 6070/g' /etc/ssh/sshd_config
 sudo service ssh restart
 echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 sudo apt --yes update && sudo apt -q --yes upgrade
+```
+Or : Enable password login to your ssh server (redhat)
+```sh
+#!/bin/bash
+sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config;
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config;
+sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/g' /etc/ssh/sshd_config;
+sed -i 's/PermitRootLogin without-password/#PermitRootLogin without-password/g' /etc/ssh/sshd_config;
+echo root:yourpassword | chpasswd;
+service sshd restart;
 ```
 #### If you Want to Create non-root User :
 ```sh
